@@ -16,7 +16,7 @@ spec:
     spec:
      containers:
       - name: devops
-        image: aldiaksrepo.azurecr.io/devops:15
+        image: aldiaksrepo.azurecr.io/devops
         resources:
           requests:
             memory: "250Mi"
