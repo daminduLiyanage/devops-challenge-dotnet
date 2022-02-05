@@ -53,7 +53,7 @@ namespace DevOpsChallenge.SalesApi
 
             // Database Context Options
             void DbContextOptionsBuilder(DbContextOptionsBuilder builder) =>
-                builder.UseSqlServer(this.Configuration.GetConnectionString("Database"), o =>
+                builder.UseSqlServer("Server=20.53.188.152;Database=DevOpsChallenge.SalesApi;ConnectRetryCount=0;User Id=SA;password=EttenmeH^168", o =>
                     o.MigrationsAssembly(typeof(DatabaseContext).Assembly.FullName));
 
             // Databases
